@@ -239,7 +239,6 @@ func resourceCloudFunctionsFunction() *schema.Resource {
 				Type:         schema.TypeBool,
 				Optional:     true,
 				ForceNew:     true,
-				RequiredWith: []string{"security_level"},
 				Description:  `Boolean variable. Any HTTP request (of a supported type) to the endpoint will trigger function execution. Supported HTTP request types are: POST, PUT, GET, DELETE, and OPTIONS. Endpoint is returned as https_trigger_url. Cannot be used with trigger_bucket and trigger_topic.`,
 			},
 
